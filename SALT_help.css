@@ -1,0 +1,148 @@
+/*모든 페이지 공통*/
+body{
+    background-color: #e9fff3f5;
+}
+header {
+    padding-top: 15px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 30px 30px 0 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo {
+    margin-left: 10%;
+    width: 160px;
+}
+a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+    font-weight: bold ;
+}
+#nav {
+    display: inline;
+    list-style-type: none;
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.navli {
+    float: left;
+    padding: 14px 25px;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+}
+/*네비게이션바 기본*/
+.navli:first-child {
+    background-color: #ffeeeb;
+}
+.navli:nth-child(2) {
+    background-color: #e5eeff;
+}
+.navli:nth-child(3) {
+    background-color: #f2e6ff;
+}
+.navli:nth-child(4) {
+    background-color: #e9fff3f5;
+}
+/*네이게이션바 hover*/
+.navli:first-child:hover {
+    background-color: #f6cac1;
+}
+.navli:nth-child(2):hover {
+    background-color: #a1c0f9;
+}
+.navli:nth-child(3):hover {
+    background-color: #ddc1fb;
+}
+.navli:nth-child(4):hover {
+    background-color: #cdfde3;
+}
+
+/*여기서부터 페이지마다 다름!*/
+#helpmain{
+    float: left;
+}
+
+#help::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+#help::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #a9f8da; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+#help::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
+#help {
+    display: inline;
+    list-style-type: none;
+    position: absolute;
+    margin-left: 20px;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.helpli {
+    background-color: #fff;
+    height: 70px;
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border-color: #d9fce9ee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#answer::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+#answer::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #a9f8da; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+#answer::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
+span {
+    /*helpli 내용 상하 간격 조정*/
+    height: 70px;
+    line-height: 70px;
+    font-size: large;
+}
+.lia {
+    /*helpli 클릭 영역 설정*/
+    display:inline-block;       /*상하*/
+    width: 600px;               /*좌우*/
+}
+
+/*답변*/
+#answer {
+    display: inline;
+    position: absolute;
+    background-color: #fff;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #d9fce9ee;
+    border-width: 1px;
+    width: 600px;
+    height: 600px;
+    margin-left: 50%;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
