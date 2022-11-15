@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoList = document.querySelector('#todo-list')
     const alert = document.querySelector('#kimchi')
 	
-	
+
 
       // '+' 버튼 익명 화살표 함수 
     const addTodo = () => { 
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             todoList.appendChild(item)
 			
 			deleteButton.id = 'deleteButton';
+			text.class = 'localtext';
 
     // 체크박스 이벤트 리스너
             checkbox.addEventListener('change', (event) =>{ 
@@ -60,8 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
             addTodo();
     })
 })
-
-
-localStorage.setItem('get#todo', 'get#todo-list');
-const input = localStorage.getItem('get#todo');
-const todoList = localStorage.getItem('get#todo-list');

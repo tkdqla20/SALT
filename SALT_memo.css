@@ -135,6 +135,9 @@ a {
     color: #fff;
     border-radius: 0 0 30px 30px;
 	border: none;
+	
+	
+	
 }
 span { /* 입력받은 값 */
     background-color: #f2e6ff;
@@ -150,13 +153,37 @@ span { /* 입력받은 값 */
     
 }
 
-#todo-list { /* 할 일 입력햇을때 뭐 주르르 나오는 그거 */
+#todo-list { /* 할 일 입력을때 뭐 낑겨 나오는 그거 */
 	margin-left: 30.639%;
 	margin-bottom: 7px;
 	font-size: large;
 	margin-top: 10px;
+	line-height: 350%;
 	
+	overflow-y: scroll;
+	list-style-type: none;
 }
+
+#todo-list::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
+
+#todo-list::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #a9f8da; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
 
 #deleteButton { /* 할일 추가했을때 같이 낑겨나오는 삭제버튼 */
 	margin-right: 10px;

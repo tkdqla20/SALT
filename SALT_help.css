@@ -34,6 +34,8 @@ a {
     padding: 14px 25px;
     font-size: 20px;
     border-radius: 20px 20px 0 0;
+    /* 마우스 올렸을때 페이드 효과 */
+	transition: all .3s ease-out;
 }
 /*네비게이션바 기본*/
 .navli:first-child {
@@ -63,23 +65,14 @@ a {
 }
 
 /*여기서부터 페이지마다 다름!*/
-#helpmain{
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+#helpMain{
     float: left;
-}
-
-#help::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
-}
-
-#help::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #a9f8da; /* 스크롤바의 색상 */
-    
-    border-radius: 10px;
-}
-
-#help::-webkit-scrollbar-track {
-    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
 }
 
 #help {
@@ -87,7 +80,6 @@ a {
     list-style-type: none;
     position: absolute;
     margin-left: 20px;
-    overflow-y: scroll;
     height: 600px;
 }
 
@@ -102,21 +94,6 @@ a {
     border-color: #d9fce9ee;
     border-style: solid;
     border-width: 1px;
-}
-
-#answer::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
-}
-
-#answer::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #a9f8da; /* 스크롤바의 색상 */
-    
-    border-radius: 10px;
-}
-
-#answer::-webkit-scrollbar-track {
-    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
 }
 
 span {
@@ -145,4 +122,86 @@ span {
     margin-left: 50%;
     margin-top: 15px;
     overflow-y: scroll;
+}
+#answer::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+#answer::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #a9f8da; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+#answer::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* 버튼 클릭 시 나오는 페이지 설정*/
+.helpAnswer {
+	/* width, height = 페이지 크기 설정, border-radius = 테두리 원형 설정 */
+	width: 50%;
+	height: 80%;
+	border-radius: 20px 0 0 20px;
+	/* transition = 애니메이션 설정, cubic-bezier = 곡선 형태의 애니메이션 */
+	transition: all 1.0s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+	/* font-size = memopage의 폰트 설정, color = memopage의 글자 색상 설정 (작동안됨) */
+	font-size: 24px;
+	color: #fff;
+	overflow-y: scroll; 
+    overflow-x: hidden;
+	position: absolute; 
+    margin-top: 15px;
+}
+.helpAnswer::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.helpAnswer::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #a9f8da; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.helpAnswer::-webkit-scrollbar-track {
+    background: rgba(33, 244, 146, 0.133);  /*스크롤바 뒷 배경 색상*/
+}
+
+/* 페이지 색 설정 */
+#answer1 {
+    background-color: #fff;
+}
+#answer2 {
+    background-color: #fff;
+}
+#answer3 {
+    background-color: #fff;
+}
+#answer4 {
+    background-color: #fff;
+}
+#answer5 {
+    background-color: #fff;
+}
+#answer6 {
+    background-color: #fff;
+}
+
+/* 페이지 오른쪽으로 200% 이동*/
+#answer1, #answer2, #answer3, #answer4, #answer5, #answer6 {
+    left: 200%;
+  }
+
+/* 버튼 클릭 시 #answer1, 2, 3, 4, 5, 6 페이지를 타겟으로 변경 */
+#t1:target #answer1, #t2:target #answer2, #t3:target #answer3, #t4:target #answer4, #t5:target #answer5, #t6:target #answer6{
+	/* 페이지를 left 200% -> 50%로 이동 */
+	left: 50%;
+	/* transition-delay = 애니메이션 딜레이 설정, !important = 해당 속성을 최우선 순위로 설정 */
+	transition-delay: .3s !important;
 }
