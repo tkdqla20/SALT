@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoList = document.querySelector('#todo-list')
     const alert = document.querySelector('#kimchi')
 	
-
+const TODOS_Ls = "toDos";
+let toDos = [];
 
       // '+' 버튼 익명 화살표 함수 
     const addTodo = () => { 
@@ -29,6 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
 			
 			deleteButton.id = 'deleteButton';
 			text.class = 'localtext';
+			
+			
+			const span = document.createElement("span"); // span 태그 생성
+  const newId = toDos.length + 1; 
+  
+  span.innerText = text; // span태그에 input창에 입력한 값 삽입
+ 
+
+  const toDoObj = {
+    text,
+    id: newId,
+  };
+  toDos.push(toDoObj); // toDos에 toDoList 삽입
+  saveToDos(); // localStorage에 저장하는 함수
+			
 
     // 체크박스 이벤트 리스너
             checkbox.addEventListener('change', (event) =>{ 
@@ -61,3 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
             addTodo();
     })
 })
+
+
+
+
+
+
+
+function saveToDos() {
+  window.localStorage.setItem(TODOS_Ls, JSON.stringify(toDos)); // localStorage에 리스트 저장
+}
+ 
