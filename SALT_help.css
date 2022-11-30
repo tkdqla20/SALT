@@ -1,6 +1,8 @@
 /*모든 페이지 공통*/
 body{
     background-color: #e9fff3f5;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 header {
     padding-top: 15px;
@@ -24,7 +26,7 @@ a {
     display: inline;
     list-style-type: none;
     position: absolute;
-    left: 50%;
+    left: 49.5%;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0; 
@@ -86,7 +88,7 @@ a {
 
 .helpli {
     background-color: #fff;
-    height: 80px;
+    height: 100px;
     width: 800px;
     padding: 10px;
     text-align: center;
@@ -99,9 +101,9 @@ a {
 
 span {
     /*helpli 내용 상하 간격 조정*/
-    height: 70px;
-    line-height: 80px;
-    font-size: large;
+    height: 95px;
+    line-height: 100px;
+    font-size: larger;
 }
 
 .lia {
@@ -152,7 +154,7 @@ span {
 .helpAnswer {
 	/* width, height = 페이지 크기 설정, border-radius = 테두리 원형 설정 */
 	width: 49.5%;
-	height: 80%;
+	height: 85%;
 	border-radius: 20px 0 0 20px;
 	/* transition = 애니메이션 설정, cubic-bezier = 곡선 형태의 애니메이션 */
 	transition: all 1.0s cubic-bezier(0.54, 0.35, 0.29, 0.99);
@@ -160,9 +162,11 @@ span {
 	font-size: 24px;
 	color: #fff;
 	overflow-y: scroll; 
-    overflow-x: hidden;
 	position: absolute; 
-    margin-top: 15px;
+    margin-top: 30px;
+    border-color: #d9fce9ee;
+    border-style: solid;
+    border-width: 1px;
 }
 .helpAnswer::-webkit-scrollbar {
     width: 8px;  /* 스크롤바의 너비 */
@@ -210,4 +214,30 @@ span {
 	left: 50%;
 	/* transition-delay = 애니메이션 딜레이 설정, !important = 해당 속성을 최우선 순위로 설정 */
 	transition-delay: .3s !important;
+}
+
+.helplia {
+    pointer-events: none;
+}
+
+p {
+    font-size: large;
+    margin-left: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.img {
+    width: 850px;
+    margin-left: 20px;
+}
+
+s {
+    color: #b7b7b7;
+}
+
+.link {
+    color: #28bd84;
+    margin-left: 150px;
+    font-size: larger;
 }

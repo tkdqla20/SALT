@@ -1194,7 +1194,7 @@
 #calendar { /* 전체적인거 */
 	background-color:white;
 	margin-top: 15px;
-	height: 90%;
+	height: 1000px;
 	width: 99%;
 	padding: 10px;
 	margin-left: 0.5%;
@@ -1229,4 +1229,9 @@
 
 .fc .fc-dayGridMonth-button { /* 헤더툴바에 month 버튼*/
 	display: none;
+}
+
+.fc-toolbar-title { /* 달력에 날짜 위치 조정 */
+	position: relative;
+	right: -20px;
 }

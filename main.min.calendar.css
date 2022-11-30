@@ -1,3 +1,4 @@
+addEventButtonaddEventButtonaddEventButton캘린더 통합
 .fc-icon,.fc-unselectable {
     -moz-user-select:none;
     -ms-user-select:none;
@@ -1245,5 +1246,5 @@
 
 .fc-toolbar-title { /* 달력에 날짜 위치 조정 */
 	position: relative;
-	right: 70px;
+	right: 30px;
 }
