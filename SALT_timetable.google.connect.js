@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var calendarEl = document.getElementById('calendar');
 			var calendar = new FullCalendar.Calendar(calendarEl, {
 				  locale: "ko",
-				  initialView: 'dayGridMonth',
+				  initialView: 'timeGridWeek',
 				
 				  headerToolbar: {
 					left: 'prev,next today',
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 },
-				  googleCalendarApiKey: 'AIzaSyBVPX1It6s_32N8utOMED82bfvf5E6iDbw',
+				  googleCalendarApiKey: ' ', // 해당 위치에 구글 캘린더 API 키 입력
 				  events: {
-				  googleCalendarId: 'f49778c019e9f8dcb541f44bcecca05357568e7cea513875edbbb49bf3d3d019@group.calendar.google.com',
+				  googleCalendarId: ' ', // 해당 위치에 구글 캘린더 ID 입력
 				  className: 'gcal-event' // an option!
 				  },
 				
