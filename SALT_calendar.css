@@ -2,7 +2,7 @@ body{
     background-color: #ffeeeb;
 	overflow-x: hidden;
 }
-header {
+.header {
     padding-top: 15px;
     background-color: #fff;
     margin: 0;

@@ -4,7 +4,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-header {
+.header {
     padding-top: 15px;
     background-color: #fff;
     margin: 0;
@@ -240,4 +240,8 @@ s {
     color: #28bd84;
     margin-left: 150px;
     font-size: larger;
+}
+
+.email {
+    color: rgb(46, 136, 55);
 }
