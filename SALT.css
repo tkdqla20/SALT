@@ -87,12 +87,21 @@ a {
 	background-color: #ececec;
 }
 
-.LINC3 {
-	margin-left: 2%;
-	font-size: 20px;
+.linc {
+    height: 165px;
+    background-color: #dcdcdc;
+    text-align : center;
+    padding-top: 45px;
+    margin-top: 50px;
+    width: 100%;
 }
 
-.logo_file {
-    margin-left: 3%;
-    width: 160px;
+.lincLogo {
+    height: 50px;
+    opacity: 0.6;
+}
+
+.lincText {
+    color: rgba(0, 0, 0, 0.600);
+    font-size: medium;
 }

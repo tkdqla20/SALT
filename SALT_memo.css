@@ -68,3 +68,21 @@ nav {
 * {
 	margin: 0;
 }
+
+.linc {
+    height: 165px;
+    background-color: #dcdcdc;
+    text-align : center;
+    padding-top: 45px;
+    width: 100%;
+}
+
+.lincLogo {
+    height: 50px;
+    opacity: 0.6;
+}
+
+.lincText {
+    color: rgba(0, 0, 0, 0.600);
+    font-size: medium;
+}

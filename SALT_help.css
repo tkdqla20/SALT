@@ -2,9 +2,9 @@
 body{
     background-color: #e9fff3f5;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
-.header {
+header {
     padding-top: 15px;
     background-color: #fff;
     margin: 0;
@@ -154,7 +154,7 @@ span {
 .helpAnswer {
 	/* width, height = 페이지 크기 설정, border-radius = 테두리 원형 설정 */
 	width: 49.5%;
-	height: 85%;
+	height: 80%;
 	border-radius: 20px 0 0 20px;
 	/* transition = 애니메이션 설정, cubic-bezier = 곡선 형태의 애니메이션 */
 	transition: all 1.0s cubic-bezier(0.54, 0.35, 0.29, 0.99);
@@ -237,11 +237,29 @@ s {
 }
 
 .link {
-    color: #28bd84;
     margin-left: 150px;
     font-size: larger;
 }
 
 .email {
     color: rgb(46, 136, 55);
+}
+
+.linc {
+    height: 165px;
+    background-color: #dcdcdc;
+    text-align : center;
+    padding-top: 45px;
+    margin-top: 850px;
+    width: 100%;
+}
+
+.lincLogo {
+    height: 50px;
+    opacity: 0.6;
+}
+
+.lincText {
+    color: rgba(0, 0, 0, 0.600);
+    font-size: medium;
 }

@@ -130,3 +130,22 @@ a {
 	text-align:right;
 	margin-right: 30px;
 }
+
+.linc {
+    height: 165px;
+    background-color: #dcdcdc;
+    text-align : center;
+    padding-top: 45px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.lincLogo {
+    height: 50px;
+    opacity: 0.6;
+}
+
+.lincText {
+    color: rgba(0, 0, 0, 0.600);
+    font-size: medium;
+}
